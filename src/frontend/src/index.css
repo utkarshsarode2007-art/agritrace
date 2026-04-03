@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GeistMono";
+  src: url("/assets/fonts/GeistMono.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Deep forest green primary: oklch(0.40 0.12 145) */
+    --primary: 0.4 0.12 145;
+    --primary-foreground: 1 0 0;
+
+    /* Warm beige secondary: oklch(0.92 0.03 75) */
+    --secondary: 0.92 0.03 75;
+    --secondary-foreground: 0.2 0.02 145;
+
+    /* White background */
+    --background: 1 0 0;
+    --foreground: 0.15 0.01 145;
+
+    /* Cards */
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.01 145;
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.01 145;
+
+    /* Muted */
+    --muted: 0.96 0.01 75;
+    --muted-foreground: 0.5 0.02 145;
+
+    /* Accent: soft success green */
+    --accent: 0.88 0.07 145;
+    --accent-foreground: 0.25 0.08 145;
+
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    /* Borders */
+    --border: 0.9 0.02 75;
+    --input: 0.9 0.02 75;
+    --ring: 0.4 0.12 145;
+
+    /* Success */
+    --success: 0.75 0.12 145;
+    --success-foreground: 0.2 0.08 145;
+
+    /* Charts */
+    --chart-1: 0.4 0.12 145;
+    --chart-2: 0.6 0.1 145;
+    --chart-3: 0.75 0.1 145;
+    --chart-4: 0.88 0.07 145;
+    --chart-5: 0.65 0.08 75;
+
+    /* Sidebar */
+    --sidebar: 0.97 0.01 75;
+    --sidebar-foreground: 0.15 0.01 145;
+    --sidebar-primary: 0.4 0.12 145;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.92 0.03 75;
+    --sidebar-accent-foreground: 0.15 0.01 145;
+    --sidebar-border: 0.9 0.02 75;
+    --sidebar-ring: 0.4 0.12 145;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
